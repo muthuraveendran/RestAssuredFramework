@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;restAssured/resources/jsonProperty&apos; to &apos;json.properties&apos;" description="Rename resource &apos;jsonProperty&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources/jsonProperty" name="json.properties" stamp="1618730152321" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;restAssured/resources/json.properties&apos; to &apos;newFile.properties&apos;" description="Rename resource &apos;json.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources/json.properties" name="newFile.properties" stamp="1618730368401" updateReferences="true"/>
-</session>

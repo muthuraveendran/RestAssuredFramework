@@ -1,7 +1,0 @@
-package api.automation.utils;
-
-public class URLGenerator {
-	
-	public String getUsers = "/users";
-
-}
