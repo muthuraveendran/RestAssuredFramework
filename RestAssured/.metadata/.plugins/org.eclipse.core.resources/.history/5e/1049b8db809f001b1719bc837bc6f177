@@ -1,0 +1,11 @@
+package api.automation.utils;
+
+import com.sun.xml.fastinfoset.sax.Properties;
+
+public class readPropertyFile {
+	
+	public Properties loadPrperties(String fileName ) {
+		System.getProperty("user.dir")
+	}
+
+}

@@ -1,0 +1,35 @@
+package differentAssertion;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.given;
+
+
+public class assertionFrameWork {
+	
+	@Test
+	
+	public void assertFrameWork() {
+		
+		String name, addressLine1, landmark;
+		int aaddharNumer , cardId,pin;
+		
+		RestAssured.baseURI ="http://localhost:8081";
+		
+			Response response = given().get("/users/1");
+			
+			aaddharNumer = JsonPath.from(response.getBody().asString()).get("addressDetails.aadharNumber"); 
+			addressLine1 = JsonPath.from(response.getBody().asString()).get("addressDetails.addressLine1"); 
+			landmark = JsonPath.from(response.getBody().asString()).get("addressDetails.landmark"); 
+
+
+			
+		
+		
+	}
+
+}

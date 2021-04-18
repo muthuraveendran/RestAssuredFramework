@@ -1,0 +1,9 @@
+package api.automation.dataFromResource;
+
+import api.automation.utils.RestUtils;
+
+public class TestGetURL {
+	String baseURL;
+	RestUtils utils;
+
+}

@@ -1,0 +1,32 @@
+package api.automation.dataFromResource;
+
+import java.util.Map;
+
+import api.automation.utils.RestUtils;
+import api.automation.utils.URLGenerator;
+import io.restassured.response.Response;
+
+public class TestGetURL {
+	String baseURL;
+	RestUtils utils;
+	URLGenerator url;
+	
+	public TestGetURL(String baseURL) {
+		this.baseURL = baseURL;
+		utils = new RestUtils();
+		url = new URLGenerator(baseURL);
+	}
+	
+	public Response getSpecificUserDetails(Map<String,String> testData){
+		Response response;
+		int id =Integer.parseInt(testData.get("id"));
+		try {
+			utils.get(url.getUsers+"/"+id);
+		} catch() {
+			
+		}
+		return response;
+		
+	}
+
+}

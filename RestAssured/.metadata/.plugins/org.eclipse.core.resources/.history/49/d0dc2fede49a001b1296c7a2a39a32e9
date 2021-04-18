@@ -1,0 +1,14 @@
+package differentAssertion;
+
+public class assertionFrameWork {
+	
+	@Test
+	
+	public void assertFrameWork() {
+		
+		String name, addressLine1, landmark;
+		
+		
+	}
+
+}

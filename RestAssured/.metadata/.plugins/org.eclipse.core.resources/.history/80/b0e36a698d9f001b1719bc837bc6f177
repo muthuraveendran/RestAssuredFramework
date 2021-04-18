@@ -1,0 +1,27 @@
+package api.automation.utils;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+
+import org.testng.annotations.Test;
+
+import io.restassured.mapper.ObjectMapper;
+
+public class readJsonFile {
+	
+	
+	
+	public static void main(String[] args) {
+		String path = System.getProperty("user.dir");
+		System.out.println(path);
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+
+		InputStream input = new FileInputStream("data/car.json");
+
+		Car car = objectMapper.readValue(input, Car.class);
+
+	}
+
+}

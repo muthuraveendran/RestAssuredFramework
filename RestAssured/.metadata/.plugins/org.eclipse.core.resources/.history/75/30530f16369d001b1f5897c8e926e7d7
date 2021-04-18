@@ -1,0 +1,15 @@
+package frameWork.UtilFile;
+
+import org.testng.annotations.Test;
+
+import api.automation.utils.RestUtils;
+
+public class TestGetRequest {
+	
+	@Test
+	public void getusers() {
+		String url = "";
+		RestUtils restUtils = new RestUtils();
+	}
+
+}

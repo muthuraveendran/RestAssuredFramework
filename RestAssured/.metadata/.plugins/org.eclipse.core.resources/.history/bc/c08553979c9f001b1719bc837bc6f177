@@ -1,0 +1,23 @@
+package api.automation.utils;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+
+import org.testng.annotations.Test;
+
+import io.restassured.mapper.*;
+
+public class readJsonFile {
+	
+	
+	
+	public static void main(String[] args) {
+		String path = System.getProperty("user.dir")+File.Sepprate;
+		System.out.println(path);
+		
+
+
+	}
+
+}

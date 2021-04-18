@@ -1,0 +1,20 @@
+package api.automation.utils;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import com.sun.xml.fastinfoset.sax.Properties;
+
+public class readPropertyFile {
+	
+	public Properties loadPrperties(String fileName ) throws FileNotFoundException {
+		String path = System.getProperty("user.dir") + File.separator + "resources" + File.separator + fileName +".properties";
+		File file = new File(path);
+		FileInputStream fileInput = new FileInputStream(file);
+		Properties props = new Properties();
+		
+		
+	}
+
+}

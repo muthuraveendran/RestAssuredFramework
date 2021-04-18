@@ -1,0 +1,9 @@
+package api.automation.helper;
+
+public class GenericHelper {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package frameWork.UtilFile;
+
+public class TestDeleteRequest {
+	
+	@Test
+	public void deleteApi( ) {
+		
+	}
+
+}

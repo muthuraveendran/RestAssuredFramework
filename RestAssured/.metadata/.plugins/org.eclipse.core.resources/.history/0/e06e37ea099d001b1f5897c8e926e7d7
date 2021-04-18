@@ -1,0 +1,5 @@
+package api.automation.pojo;
+
+public class OfficeAddressPOJO {
+
+}

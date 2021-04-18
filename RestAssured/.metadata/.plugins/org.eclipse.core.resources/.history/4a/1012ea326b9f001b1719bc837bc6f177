@@ -1,0 +1,28 @@
+package frameWork.UtilFile;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.testng.annotations.Test;
+
+import api.automation.pojo.UsersPOJO;
+import io.restassured.RestAssured;
+
+public class TestPutRequest {
+	
+	@Test
+	public void updateRequest() {
+		
+		RestAssured.baseURI = "http://localhost:8081/users/6";
+		UsersPOJO user = new UsersPOJO(); 
+		
+		
+		Map<String,String> data = new HashMap<String,String>();
+		data.put("name", "Raja");
+		data.put("name", "Raja");
+		
+		user.updateUser(null);
+		
+	}
+
+}

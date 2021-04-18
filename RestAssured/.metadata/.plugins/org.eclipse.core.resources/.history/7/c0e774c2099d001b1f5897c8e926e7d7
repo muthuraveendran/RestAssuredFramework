@@ -1,0 +1,6 @@
+package api.automation.pojo;
+
+public class HomeAddressPOJO {
+	private String houseNumber;
+
+}

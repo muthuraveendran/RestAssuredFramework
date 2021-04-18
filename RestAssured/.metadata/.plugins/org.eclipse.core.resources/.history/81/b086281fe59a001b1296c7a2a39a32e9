@@ -1,0 +1,22 @@
+package differentAssertion;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class assertionFrameWork {
+	
+	@Test
+	
+	public void assertFrameWork() {
+		
+		String name, addressLine1, landmark;
+		
+		RestAssured.baseURI ="http://localhost:8081";
+		
+			give().get("/users/1")
+		
+		
+	}
+
+}

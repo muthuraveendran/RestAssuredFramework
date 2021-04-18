@@ -1,0 +1,15 @@
+package differentAssertion;
+
+
+public class assertArrayBasedAPi {
+	
+	@Test
+	public void assertMultipleApi() {
+	
+	String  landmark, cardId;
+	int pin;
+	
+	RestAssured.baseURI = "http://localhost:8081";
+	}
+
+}

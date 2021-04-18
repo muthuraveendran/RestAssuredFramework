@@ -1,0 +1,5 @@
+package api.automation.helper;
+
+public class GenericHelper {
+
+}

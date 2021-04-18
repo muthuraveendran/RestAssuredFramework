@@ -1,0 +1,9 @@
+package frameWork.UtilFile;
+
+public class TestPutRequest {
+	
+	public void updateRequest() {
+		
+	}
+
+}

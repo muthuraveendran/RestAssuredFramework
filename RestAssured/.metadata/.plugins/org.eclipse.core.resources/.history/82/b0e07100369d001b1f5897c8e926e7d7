@@ -1,0 +1,12 @@
+package frameWork.UtilFile;
+
+import org.testng.annotations.Test;
+
+public class TestGetRequest {
+	
+	@Test
+	public void getusers() {
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package api.automation.dataFromResource;
+
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
+
+import api.automation.helper.GenericHelper;
+
+public class TestReadPropety {
+	public static void main(String[] args) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+		
+		//Read Json file
+		GenericHelper generic = new GenericHelper();
+		Map<String,String> map  = new HashMap<String,String> ();
+		map = generic.readJson("readJson","Data","qaData.json");
+		System.out.println(	map.get("name"));
+		
+		//Read Property file
+		generic.loadPrperties("config");
+		
+		
+		
+	}
+
+}

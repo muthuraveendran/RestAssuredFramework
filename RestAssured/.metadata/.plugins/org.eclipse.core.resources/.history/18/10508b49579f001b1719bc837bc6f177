@@ -1,0 +1,70 @@
+package api.automation.pojo;
+
+import java.util.Map;
+
+public class UsersPOJO {
+	
+	private int id;
+	private String name;
+	private String dob;
+	private HomeAddressPOJO addressDetails;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	public HomeAddressPOJO getAddressDetails() {
+		return addressDetails;
+	}
+	public void setAddressDetails(HomeAddressPOJO addressDetails) {
+		this.addressDetails = addressDetails;
+	}
+	
+	publis String userData(Map<String,String> testData) {
+		
+		OfficeAddressPOJO officeaddress = new OfficeAddressPOJO();
+		officeaddress.setBuildingNumber(Integer.parseInt(testData.get("buildingNumber")));
+		officeaddress.setAddressLine1(testData.get("addressLine1"));
+		officeaddress.setAddressLine2(testData.get("addressLine2"));
+		officeaddress.setLandmark(testData.get("landMark"));
+		officeaddress.setCardId(testData.get("cardId"));
+		officeaddress.setPin(Integer.parseInt(testData.get("pin")));
+		
+		HomeAddressPOJO homeaddress = new HomeAddressPOJO();
+		homeaddress.setHouseNumber(testData.get("houseNumber"));
+		homeaddress.setAadharNumber(Integer.parseInt(testData.get("aadharNumber")));
+		homeaddress.setAddressLine1(testData.get("addressLine1"));
+		homeaddress.setAddressLine2(testData.get("addressLine2"));
+		homeaddress.setLandmark(testData.get("landmark"));
+		homeaddress.setPin(Integer.parseInt(testData.get("pin")));
+		homeaddress.setOfficeAddress(officeaddress);
+		
+		UsersPOJO user = new UsersPOJO();
+		user.setId(testData.get("id"));
+
+
+
+
+
+
+
+
+		
+	}
+
+	
+
+}

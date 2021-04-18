@@ -1,0 +1,11 @@
+package differentAssertion;
+
+public class assertionFrameWork {
+	
+	@Test
+	
+	public void assertFrameWork() {
+		
+	}
+
+}

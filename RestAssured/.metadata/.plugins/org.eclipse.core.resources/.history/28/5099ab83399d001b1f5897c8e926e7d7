@@ -1,0 +1,22 @@
+package api.automation.utils;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.given;
+
+
+
+public class RestUtils {
+	@Test
+	public Response get(String url){
+		return given().
+		header("Authorization","Bearer").
+		header("Content-Type","application/json").log().all().
+		get(url);
+		
+	}
+	
+
+}

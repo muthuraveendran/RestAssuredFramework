@@ -1,0 +1,12 @@
+package api.automation.helper;
+
+import java.util.Map;
+
+public class GenericHelper {
+	
+public Map<String, String> readJson() {
+	return null;
+	
+}
+
+}

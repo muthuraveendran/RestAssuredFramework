@@ -1,0 +1,10 @@
+package frameWork.UtilFile;
+
+public class TestGetRequest {
+	
+	@Test
+	public void getusers() {
+		
+	}
+
+}
